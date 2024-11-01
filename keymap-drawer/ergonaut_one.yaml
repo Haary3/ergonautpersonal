@@ -1,87 +1,87 @@
 layers:
   default:
-  - {t: ']', h: Gui}
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - {t: '`', h: Esc}
+  - Z
   - Y
   - U
-  - I
-  - O
-  - P
-  - '['
-  - {t: '`', h: Ctrl}
   - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
-  - Z
-  - X
-  - C
-  - V
+  - Q
+  - P
   - B
-  - N
   - M
+  - L
+  - F
+  - J
+  - ↹
+  - {t: C, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: I, h: LEFT SHIFT}
+  - {t: E, h: Ctrl}
+  - O
+  - D
+  - {t: T, h: Ctrl}
+  - {t: N, h: RIGHT SHIFT}
+  - {t: R, h: RIGHT ALT}
+  - {t: H, h: LEFT GUI}
+  - '-'
+  - \
+  - V
+  - X
+  - '['
+  - ''''
+  - ;
+  - W
+  - G
   - ','
   - .
-  - /
-  - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
+  - K
+  - Sft+ -
+  - {t: /, h: toggle}
+  - {t: Gui+ V, h: adjust}
+  - {t: ⏎, h: raise}
+  - {t: Esc, h: raise}
+  - {t: ⌫, h: raise}
+  - {t: BACKSPACE, h: toggle}
   lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: F1, h: toggle}
+  - {t: '1', h: F1}
+  - {t: '2', h: F2}
+  - {t: '3', h: F3}
+  - {t: '4', h: F4}
+  - {t: '5', h: F5}
+  - {t: '6', h: F6}
+  - {t: '7', h: F7}
+  - {t: '8', h: F8}
+  - {t: '9', h: F9}
+  - {t: '0', h: F10}
   - F11
-  - F12
   - {t: +, h: Ctrl}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: Ctrl}
+  - Sft+ 1
+  - Sft+ 2
+  - Sft+ 3
+  - Sft+ 4
+  - Sft+ 5
+  - Sft+ 6
+  - Sft+ 7
+  - Sft+ 8
+  - Sft+ 8
+  - Sft+ 9
+  - {t: Sft+ \, h: toggle}
   - {t: '=', h: Alt}
   - '1'
   - '2'
   - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - 'Sft+ #'
+  - Sft+ ]
+  - '#'
+  - ']'
+  - AGr+ 8
+  - AGr+ 9
+  - AGr+ -
   - Alt
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -94,7 +94,7 @@ layers:
   - KP MINUS
   - Vol Up
   - Home
-  - Print Scrn
+  - UP ARROW
   - Page Up
   - SLCK
   - CLCK
@@ -118,13 +118,13 @@ layers:
   - KP DOT
   - Vol Down
   - End
-  - ↓
+  - PRINTSCREEN
   - Page Down
   - Pause Break
   - Alt
+  - {t: ▽, type: trans}
+  - APPLICATION
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,9 +165,9 @@ layers:
   - ''
   - ''
   - Reset
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
