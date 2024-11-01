@@ -37,9 +37,9 @@ layers:
   - K
   - Sft+ -
   - {t: /, h: toggle}
-  - {t: Gui+ V, h: adjust}
+  - {t: Gui+ V, h: lower}
   - {t: ⏎, h: raise}
-  - {t: Esc, h: raise}
+  - {t: Esc, h: lower}
   - {t: ⌫, h: raise}
   - {t: BACKSPACE, h: toggle}
   lower:
@@ -80,7 +80,7 @@ layers:
   - AGr+ -
   - Alt
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - ''
   - Reset
   - {t: ▽, type: trans}
-  - {type: held}
+  - ''
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
