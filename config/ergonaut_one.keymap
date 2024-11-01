@@ -8,9 +8,14 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick-tap-ms = <189>; };
+flavor = "balanced";
+         tapping-term-ms = <300>;};
 
-&mt { quick-tap-ms = <200>; };
+&mt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <250>;
+    flavor = "balanced";
+};
 
 / {
     conditional_layers {
