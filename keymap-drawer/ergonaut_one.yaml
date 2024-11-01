@@ -19,10 +19,10 @@ layers:
   - {t: E, h: Ctrl}
   - O
   - D
-  - {t: T, h: Ctrl}
+  - {t: T, h: RIGHT CONTROL}
   - {t: N, h: RIGHT SHIFT}
   - {t: R, h: RIGHT ALT}
-  - {t: H, h: LEFT GUI}
+  - {t: H, h: RIGHT GUI}
   - '-'
   - \
   - V
