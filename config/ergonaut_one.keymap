@@ -22,15 +22,43 @@
         };
     };
 
+    behaviors {
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 41 40>;
+            hold-trigger-on-release;
+        };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 38 37 36>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&mt ESC GRAVE  &kp Z           &kp Y           &kp U             &kp A             &kp Q          &kp P      &kp B        &kp M              &kp L            &kp F           &kp J
-&kp TAB        &mt LEFT_GUI C  &mt LEFT_ALT S  &mt LEFT_SHIFT I  &mt LCTRL E       &kp O          &kp D      &mt RCTRL T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT R  &mt LEFT_GUI H  &kp MINUS
-&kp BACKSLASH  &kp V           &kp X           &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp W      &kp G        &kp COMMA          &kp DOT          &kp K           &kp RS(MINUS)
-                                               &kt SLASH         &lt 1 LG(V)       &lt 2 RET      &lt 1 ESC  &lt 2 BSPC   &kt BACKSPACE
+&mt ESC GRAVE  &kp Z            &kp Y            &kp U              &kp A             &kp Q          &kp P      &kp B         &kp M               &kp L             &kp F            &kp J
+&kp TAB        &hml LEFT_GUI C  &hml LEFT_ALT S  &hml LEFT_SHIFT I  &hml LCTRL E      &kp O          &kp D      &hmr RCTRL T  &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT R  &hmr LEFT_GUI H  &kp MINUS
+&kp BACKSLASH  &kp V            &kp X            &kp LEFT_BRACKET   &kp SINGLE_QUOTE  &kp SEMICOLON  &kp W      &kp G         &kp COMMA           &kp DOT           &kp K            &kp RS(MINUS)
+                                                 &kt SLASH          &lt 1 LG(V)       &lt 2 RET      &lt 1 ESC  &lt 2 BSPC    &kt BACKSPACE
             >;
         };
 
